@@ -23,13 +23,21 @@ body {
 }
 .btn {
   color: #ffffff;
-  padding: 1rem 1.5rem;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.5rem;
   border: none;
   border-radius: 0.5rem;
   background-color: var(--Button-color);
+  transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #d37912;
+    cursor: pointer;
+}
+.header-btn,
+.feature-btn {
+  padding: 1rem 1.5rem;
 }
 .container {
   width: 90%;
@@ -96,7 +104,7 @@ body {
   background: rgba(255, 144, 14, 0.1);
 }
 .banner {
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
@@ -133,7 +141,7 @@ body {
 .feature {
   width: 95%;
   margin: 0 auto;
-  padding: 4rem 3rem 0 3rem;
+  padding: 6rem 3rem 0 3rem;
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -172,3 +180,74 @@ body {
   margin: 1.4rem 0;
 }
 /* End Of Feature Section Style */
+
+/* 
+*   Experience Section Style Start
+*/
+.experiences {
+  position: relative;
+}
+.experience {
+  padding: 6rem 0 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+}
+.section-summary {
+  text-align: left;
+}
+.e-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  color: var(--Heading-color);
+  border-left: 5px solid var(--Button-color);
+  padding-left: 1rem;
+}
+.e-description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-top: 1.5rem;
+  color: var(--Text-color);
+}
+.summary {
+  margin-top: 1.2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  transition: transform 0.3s;
+}
+.summary:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.summary-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: var(--Heading-color);
+}
+.summary-details {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: var(--Text-color);
+  margin-top: 0.5rem;
+}
+.section-image img {
+  width: 100%;
+}
+.experience-btn {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding: 1.6rem 1.2rem;
+}
+.experience-btn span {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 70px;
+}
