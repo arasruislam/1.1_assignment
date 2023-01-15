@@ -89,11 +89,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 2rem;
 }
 .nav-items .nav-item {
   list-style: none;
   text-align: center;
-  margin-left: 2rem;
 }
 .nav-items .nav-item a {
   text-decoration: none;
@@ -406,6 +406,7 @@ body {
   }
   .navbar .nav-items {
     flex-direction: column;
+    row-gap: 0.2rem;
   }
   .banner {
     padding-top: 3rem;
