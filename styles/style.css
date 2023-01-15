@@ -1,0 +1,174 @@
+/* 
+*   Google Font
+*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+/* 
+*   Common CSS Style
+*/
+:root {
+  --Text-color: #727272;
+  --Heading-color: #131313;
+  --Button-color: #ff900e;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+}
+.btn {
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--Button-color);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*
+*   Header Section Style Start 
+*/
+#header {
+  width: 100%;
+  background: rgba(255, 144, 14, 0.1);
+  padding-top: 2rem;
+}
+/* 
+*   Top Header Section Style
+ */
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  color: var(--Heading-color);
+  cursor: pointer;
+}
+.navbar .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-items .nav-item {
+  list-style: none;
+  text-align: center;
+  margin-left: 2rem;
+}
+.nav-items .nav-item a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: #424242;
+  transition: color 0.3s;
+}
+.nav-items .nav-item a:hover {
+  color: var(--Button-color);
+}
+/* End Of Top Header Section Style */
+
+/*
+*   Main Section Start 
+*/
+#main {
+  width: 100%;
+}
+/* 
+*   Banner Section Style Start 
+*/
+#Banner-section {
+  width: 100%;
+  background: rgba(255, 144, 14, 0.1);
+}
+.banner {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+}
+.banner-content {
+  max-width: 70%;
+  align-self: center;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.3rem;
+  color: var(--Heading-color);
+}
+.banner-img img {
+  max-width: 100%;
+  width: 100%;
+  align-self: center;
+}
+.banner-description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: var(--Text-color);
+  margin: 1.5rem 0;
+}
+/* End Of Banner Section Style */
+
+/*
+*   Feature Section Style Start 
+*/
+.feature {
+  width: 95%;
+  margin: 0 auto;
+  padding: 4rem 3rem 0 3rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; */
+}
+.feature-images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  justify-content: center;
+}
+.feature-image img {
+  width: 100%;
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  color: var(--Heading-color);
+}
+.title-q {
+  font-weight: 500;
+  color: var(--Text-color);
+}
+.title-f {
+  color: var(--Button-color);
+}
+.feature-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--Text-color);
+  margin: 1.4rem 0;
+}
+/* End Of Feature Section Style */
