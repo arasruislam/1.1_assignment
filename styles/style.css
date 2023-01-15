@@ -32,8 +32,8 @@ body {
   transition: background-color 0.3s;
 }
 .btn:hover {
-    background-color: #d37912;
-    cursor: pointer;
+  background-color: #d37912;
+  cursor: pointer;
 }
 .header-btn,
 .feature-btn {
@@ -139,7 +139,8 @@ body {
 *   Feature Section Style Start 
 */
 .feature {
-  width: 95%;
+  max-width: 95%;
+  /* padding: 0 4rem; */
   margin: 0 auto;
   padding: 6rem 3rem 0 3rem;
   display: flex;
@@ -188,7 +189,7 @@ body {
   position: relative;
 }
 .experience {
-  padding: 6rem 0 2rem 0;
+  padding-top: 6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -238,7 +239,12 @@ body {
   margin-top: 0.5rem;
 }
 .section-image img {
-  width: 100%;
+  max-width: 100%;
+}
+.experience-duration {
+  position: absolute;
+  bottom: 0;
+  right: 25%;
 }
 .experience-btn {
   font-size: 1.2rem;
@@ -250,4 +256,113 @@ body {
   font-weight: 700;
   font-size: 4rem;
   line-height: 70px;
+}
+/* End Of Experience Section Style */
+
+/*
+*   Fact Style Start 
+*/
+.fact {
+  padding-top: 6rem;
+}
+.fact-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--Heading-color);
+}
+.fact-description {
+  max-width: 50%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 1.5rem;
+  color: var(--Text-color);
+}
+.fact-works {
+  max-width: 100%;
+  margin: 6rem 3rem 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+}
+.work {
+  border: 1px solid #ff900e;
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.work:hover {
+  border: none;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.work-achievement {
+  margin-top: 0.5rem;
+}
+.achievement-number {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  color: #424242;
+}
+.achievement-type {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  color: var(--Text-color);
+}
+/* End Of Fact Style */
+
+/*
+*   Sponsor Section Style Start 
+*/
+.sponsors {
+  padding-top: 6rem;
+}
+.sponsors .sponsor-summary {
+  text-align: center;
+}
+.sponsor-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+.sponsor-description {
+  margin: 1.5rem auto;
+  width: 50%;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-logos .logo img {
+  max-width: 100%;
+  filter: grayscale(100%);
+}
+/* End Of Sponsor Section Style */
+
+/*  
+*   Footer Section Style Start
+*/
+#footer {
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+.footer-content {
+  width: 100%;
+  background: #fff4e7;
+  border-radius: 8px;
+}
+.copyright-text {
+  padding: 2.5rem 0;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #424242;
 }
